@@ -8,8 +8,9 @@ class ChessGame extends React.Component {
     state={
         // TODO
         gameState: new Game(this.props.isWhite),
+        draggedPieceTargetId: "",
+        playerTurnToMoveIsWhite=false,
         // check if white/black king is in check or not
-
         whiteKingCheck: false,
         blackKingCheck: false,
     }
